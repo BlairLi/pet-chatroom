@@ -1,95 +1,50 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// pages/index.js
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <div className="container mt-5">
+      <section className="section custom-section">
+        <div className="columns is-vcentered">
+          <div className="column is-half">
+            <h1 className="title is-2 custom-title">Pet Universe</h1>
+            <p className="subtitle is-4 custom-subtitle">
+              A place where you meet, discuss, and engage with other pet lovers all over the world
+            </p>
+            <Link href="/signin">
+              <button className="custom-button">Start Chatting</button>
+            </Link>
+          </div>
+          <div className="column is-half">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              src="/images/dogandcat.png" // Make sure to place the image in the public/images directory
+              alt="Pets"
+              width={500}
+              height={300}
             />
-          </a>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      <section className="section custom-section">
+        <div className="container">
+          <h2 className="title is-3 custom-title">Our Goal</h2>
+          <p className="subtitle is-5 custom-subtitle">
+            Provide a unique platform only for pet lovers to chat with each other wherever they are
           </p>
-        </a>
-      </div>
-    </main>
+        </div>
+      </section>
+
+      <section className="section custom-section">
+        <div className="container">
+          <h2 className="title is-4 custom-title">In Pet Universe, you can</h2>
+          <ul className="custom-subtitle">
+            <li>Join & Create chatrooms to start sharing your thoughts with others</li>
+            <li>Talk with others you like any time, any where</li>
+          </ul>
+        </div>
+      </section>
+    </div>
   );
 }

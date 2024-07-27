@@ -1,0 +1,117 @@
+/* styles/custom.css */
+
+/* Set the primary color */
+:root {
+  --primary-color: #EEF1DB;
+  --button-background-color: #E0E0E0;
+}
+
+body {
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-section {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button {
+  background-color: var(--button-background-color);
+  color: #333;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #d4d7c7;
+}
+
+.custom-title {
+  color: #333;
+}
+
+.custom-subtitle {
+  color: #666;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-item {
+  font-weight: bold;
+}
+
+.navbar-end .button {
+  margin-left: 1rem;
+  background-color: var(--button-background-color);
+}
+
+.footer {
+  text-align: center;
+  /* padding: 1rem; */
+  /* border-top: 1px solid #ccc; */
+  background-color: white;
+}
+
+.footer .footer-text {
+  font-weight: bold;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  flex: 1;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.header-buttons .button {
+  background-color: var(--button-background-color);
+  margin-right: 1rem;
+}
+
+.header-buttons .profile {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons .profile img {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
